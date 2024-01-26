@@ -20,5 +20,14 @@ public class ArrayListToArray {
             System.out.println(element);
         }
     }
-}
 
+
+        public static String[] convertArrayListToArray(ArrayList<String> stringList) {
+            if (stringList == null) {
+                return null;
+            }
+
+            String[] stringArray = new String[stringList.size()];
+            return stringList.toArray(stringArray);
+        }
+    }
