@@ -1,4 +1,4 @@
-package hashTable;
+package hashMap;
 
 import java.util.HashMap;
 
@@ -43,15 +43,15 @@ public class StudentHashMap {
         // Populate the HashMap
         studentMap.put("Ganesh", new Student("Ganesh", "Uppari", 3.5));
         studentMap.put("Ramyasri", new Student("Ramyasri", "Bangari", 4.0));
-        studentMap.put("Nikhil", new Student("Nikhil", "Bolgam", 3.8));
+        studentMap.put("John", new Student("John", "Bolgam", 3.8));
         studentMap.put("Nikhil", new Student("Nikhil", "Thota", 3.7));
         studentMap.put("Naresh", new Student("Naresh", "Uppari", 3.9));
         studentMap.put("Laxmi", new Student("Laxmi", "Uppari", 3.6));
         studentMap.put("Pavan", new Student("Pavan", "Uppari", 3.2));
-        studentMap.put("Chinnu", new Student("Chinnu", "Bangari", 4.2));
+        studentMap.put("Chinnu", new Student("Chinnu", "Bangari", 4.0));
 
         // Get a student by name
-        Student foundStudent = getStudentByName("Pavan" , studentMap);
+        Student foundStudent = getStudentByName("Chinnu" , studentMap);
 
         // Print the found student
         System.out.println(foundStudent);
